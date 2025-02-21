@@ -14,10 +14,19 @@ export PATH="$NVM_DIR/versions/node/$(nvm version)/bin:$PATH"
 
 # my alias
 alias la='ls -lart'
-alias profile-vim='sudo vim ~/.zshrc'
+alias profile-vim='vim ~/.zshrc'
 alias profile-source='source ~/.zshrc'
-alias profile-nano='sudo nano ~/.zshrc'
+alias profile-nano='nano ~/.zshrc'
 alias profile-cat='cat ~/.zshrc'
+alias profile='code ~/.zshrc'
+
+#gradle alias
+alias gcb='./gradlew clean build'
+alias gw='./gradlew'
+alias gc='./gradlew clean'
+
+path+=('/opt/homebrew/bin')
+export PATH
 
 # project repo alias
 alias test-repo='cd ~/IdeaProjects/test-repo/'
